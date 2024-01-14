@@ -11,5 +11,13 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        showMessage("This is Dummy Message!!");
+
+    }
+
+    //Method for Showing message
+    public static void showMessage(String message){
+        System.out.println("Showing Message ::"+message);
     }
 }
