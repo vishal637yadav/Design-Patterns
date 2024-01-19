@@ -1,4 +1,4 @@
-package code.structural.dp.factory;
+package code.creational.dp.factory;
 
 import java.io.BufferedReader;
 import java.io.IOException;

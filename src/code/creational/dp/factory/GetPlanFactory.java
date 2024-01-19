@@ -1,4 +1,4 @@
-package code.structural.dp.factory;
+package code.creational.dp.factory;
 
 public class GetPlanFactory {
 
