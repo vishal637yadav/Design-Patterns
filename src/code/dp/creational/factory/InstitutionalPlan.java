@@ -1,4 +1,4 @@
-package code.creational.dp.factory;
+package code.dp.creational.factory;
 
 public class InstitutionalPlan extends Plan {
 
