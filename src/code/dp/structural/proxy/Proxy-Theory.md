@@ -165,8 +165,8 @@ additional behaviour at runtime.
 Proxy used in Java API: java.rmi.*;
 ---------------------------------------------------------------------------------------------
 
-Youtube Vedio for Reference : Proxy Design Pattern
-<a href="https://youtu.be/9MxHKlVc6ZM">Click Here</a>
+Youtube Vedio for Reference : 
+[Proxy Design Pattern](https://youtu.be/9MxHKlVc6ZM)
 ---------------------------------------------------------------------------------------------
 
 
