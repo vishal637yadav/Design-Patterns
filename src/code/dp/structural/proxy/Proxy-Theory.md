@@ -187,3 +187,8 @@ Youtube Vedio for Reference :
 > Advises about risks or negative outcomes of certain actions.
 
 
+Class Diagram:
+Inline-style:
+
+![alt text](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/Composite-Class-Diagram.jpg "Logo Title Composite Design Pattern")
+
