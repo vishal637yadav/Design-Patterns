@@ -75,116 +75,115 @@ So here, **Hotel-Keeper** is **Facade** and respective **Restaurants is system**
 ---
 ## 4.1 Step wise Step Implementation of above problem
 #### Interface of Hotel
-   package structural.facade;
-   
-   public interface Hotel {
+      package structural.facade;
+      public interface Hotel {
       public Menus getMenus();
-   }
+      }
 
 The hotel interface only returns Menus. Similarly, the Restaurant are of three types and can implement the hotel interface. Let’s have a look at the code for one of the Restaurants.
 
 #### NonVegRestaurant.java
 
-   package structural.facade;
+      package structural.facade;
    
-   public class NonVegRestaurant implements Hotel {
-   
+      public class NonVegRestaurant implements Hotel {
+      
        public Menus getMenus()
        {
            NonVegMenu nv = new NonVegMenu();
            return nv;
        }
-   }
+      }
 
 #### VegRestaurant.java
 
-   package structural.facade;
-   
-   public class VegRestaurant implements Hotel {
-   
-       public Menus getMenus()
-       {
-           VegMenu v = new VegMenu();
-           return v;
-       }
-   }
+      package structural.facade;
+      
+      public class VegRestaurant implements Hotel {
+      
+          public Menus getMenus()
+          {
+              VegMenu v = new VegMenu();
+              return v;
+          }
+      }
 
 #### VegNonBothRestaurant.java
 
-   package structural.facade;
-   
-   public class VegNonBothRestaurant implements Hotel {
-   
-       public Menus getMenus()
-       {
-           Both b = new Both();
-           return b;
-       }
-   }
+      package structural.facade;
+      
+      public class VegNonBothRestaurant implements Hotel {
+      
+          public Menus getMenus()
+          {
+              Both b = new Both();
+              return b;
+          }
+      }
 
 Now let’s consider the facade,
 
 #### HotelKeeper.java
    
-   /*package whatever //do not write package name here */
-   
-   package structural.facade;
-   
-   public interface HotelKeeper {
-   
-   
-   public VegMenu getVegMenu();
-   public NonVegMenu getNonVegMenu();
-   public Both getVegNonMenu();
-   
-   }
+      /*package whatever //do not write package name here */
+      
+      package structural.facade;
+      
+      public interface HotelKeeper {
+      
+      
+      public VegMenu getVegMenu();
+      public NonVegMenu getNonVegMenu();
+      public Both getVegNonMenu();
+      
+      }
 
 #### HotelKeeperImplementation.java
    
-   package structural.facade;
-   
-   public class HotelKeeperImplementation implements HotelKeeper {
-   
-       public VegMenu getVegMenu()
-       {
-           VegRestaurant v = new VegRestaurant();
-           VegMenu vegMenu = (VegMenu)v.getMenus();
-           return vegMenu;
-       }
-    
-       public NonVegMenu getNonVegMenu()
-       {
-           NonVegRestaurant v = new NonVegRestaurant();
-           NonVegMenu NonvegMenu = (NonVegMenu)v.getMenus();
-           return NonvegMenu;
-       }
-    
-       public Both getVegNonMenu()
-       {
-           VegNonBothRestaurant v = new VegNonBothRestaurant();
-           Both bothMenu = (Both)v.getMenus();
-           return bothMenu;
-       }
-   }
+      package structural.facade;
+      
+      public class HotelKeeperImplementation implements HotelKeeper {
+      
+          public VegMenu getVegMenu()
+          {
+              VegRestaurant v = new VegRestaurant();
+              VegMenu vegMenu = (VegMenu)v.getMenus();
+              return vegMenu;
+          }
+       
+          public NonVegMenu getNonVegMenu()
+          {
+              NonVegRestaurant v = new NonVegRestaurant();
+              NonVegMenu NonvegMenu = (NonVegMenu)v.getMenus();
+              return NonvegMenu;
+          }
+       
+          public Both getVegNonMenu()
+          {
+              VegNonBothRestaurant v = new VegNonBothRestaurant();
+              Both bothMenu = (Both)v.getMenus();
+              return bothMenu;
+          }
+      }
 
 From this, It is clear that the complex implementation will be done by HotelKeeper himself. The client will just access the HotelKeeper and ask for either Veg, NonVeg or VegNon Both Restaurant menu.
 
 ### 4.2 How will the client program access this façade?
 
-   package structural.facade;
-   
-   public class Client
-   {
-   public static void main (String[] args)
-   {
-   HotelKeeper keeper = new HotelKeeperImplementation();
-   
-           VegMenu v = keeper.getVegMenu();
-           NonVegMenu nv = keeper.getNonVegMenu();
-           Both = keeper.getVegNonMenu();
-    
-       }
-   }
+      package structural.facade;
+      
+      public class Client
+      {
+      public static void main (String[] args)
+      {
+      HotelKeeper keeper = new HotelKeeperImplementation();
+      
+              VegMenu v = keeper.getVegMenu();
+              NonVegMenu nv = keeper.getNonVegMenu();
+              Both = keeper.getVegNonMenu();
+       
+          }
+      }
 
 In this way, the implementation is sent to the façade. The client is given just one interface and can access only that. This hides all the complexities.
 
