@@ -37,11 +37,11 @@ _You are tasked with developing a software component **to manage a hierarchical 
 ## Implementing the Composite Pattern for File System Hierarchy :
 Let’s understand the components of the Composite Pattern using file system hierarchy example:
 
-    ## Key Component in the Composite Pattern
-        1. **Component:** The Component is the common interface for all objects in the composition. It defines the methods that are common to both leaf and composite objects.
-        2. **Leaf:** The Leaf is the individual object that does not have any children. It implements the component interface and provides the specific functionality for individual objects.
-        3. **Composite:** The Composite is the container object that can hold Leaf objects as well as the other Composite objects. It implements the Component interface and provides methods for adding, removing and accessing children.
-        4. **Client:** The Client is responsible for using the Component interface to work with objects in the composition. It treats both Leaf and Composite objects uniformly.
+## Key Component in the Composite Pattern
+1. **Component:** The Component is the common interface for all objects in the composition. It defines the methods that are common to both leaf and composite objects.
+2. **Leaf:** The Leaf is the individual object that does not have any children. It implements the component interface and provides the specific functionality for individual objects.
+3. **Composite:** The Composite is the container object that can hold Leaf objects as well as the other Composite objects. It implements the Component interface and provides methods for adding, removing and accessing children.
+4. **Client:** The Client is responsible for using the Component interface to work with objects in the composition. It treats both Leaf and Composite objects uniformly.
 
 ## Step Wise Implementation of Composite Design Pattern
 1. Component
@@ -120,7 +120,7 @@ In this client code, you can see how the client interacts with both leaf (file) 
 
 ## Diagrammatic representation of the Composite Design Pattern
 
-[img](/../images/Composite-ClassStructure.JPG)
+![img](/../images/Composite-ClassStructure.JPG)
 
 # Composite-Design-Pattern
 UML Diagram: Composite Design Pattern
