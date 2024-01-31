@@ -122,9 +122,11 @@ In this client code, you can see how the client interacts with both leaf (file) 
 
 ![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/Composite-ClassStructure.JPG)
 
+---
+
 # Composite-Design-Pattern
 UML Diagram: Composite Design Pattern
-
+***
 Code Implementation of the above Problem:
 
     #include <bits/stdc++.h>
