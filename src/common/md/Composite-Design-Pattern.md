@@ -120,7 +120,7 @@ In this client code, you can see how the client interacts with both leaf (file) 
 
 ## Diagrammatic representation of the Composite Design Pattern
 
-![img](/../images/Composite-ClassStructure.JPG)
+![img](/../../images/Composite-ClassStructure.JPG)
 
 # Composite-Design-Pattern
 UML Diagram: Composite Design Pattern
