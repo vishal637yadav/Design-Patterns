@@ -1,10 +1,11 @@
 # Facade Method Design Pattern
 
 **Facade Method Design Pattern** is a part of the **Gang of Four design patterns** and it is categorized under **Structural design patterns**. 
-Before we dive deep into the details of it, imagine a building, the facade is the outer wall that people see, 
-but behind it is a complex network of wires, pipes, and other systems that make the building function. 
-The facade pattern is like that outer wall. It hides the complexity of the underlying system and provides a simple interface 
-that clients can use to interact with the system.
+_**Facade**_ **hides the complexity** of the **underlying system** and **provides a simple interface** that **clients can use to interact with the system**.
+
+## Example 1
+Imagine a Building, the **facade is the outer wall** that people see, but **behind** it is **a complex network of wires, pipes**, and **other systems** that make the building function. 
+The **facade pattern** is like that **outer wall**. 
 
 ![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/FacadeDesignPatter-Example1.JPG)
 
