@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 // A Simple remote control with one button
 class SimpleRemoteControl {

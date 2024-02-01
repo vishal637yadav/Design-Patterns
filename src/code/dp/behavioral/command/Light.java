@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 // Light class and its corresponding command
 // classes

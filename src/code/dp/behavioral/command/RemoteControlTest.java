@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 // Driver class
 class RemoteControlTest {

@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 // Stereo and its command classes
 public class Stereo

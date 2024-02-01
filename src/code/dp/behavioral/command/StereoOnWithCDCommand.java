@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 class StereoOnWithCDCommand implements Command {
     Stereo stereo;

@@ -1,4 +1,4 @@
-package code.dp.behavioral;
+package code.dp.behavioral.command;
 
 public class LightOffCommand implements Command {
     Light light;
