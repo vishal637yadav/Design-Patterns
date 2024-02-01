@@ -1,7 +1,15 @@
 # Facade Method Design Pattern
+# Object Structural: Facade **Gang of Four design patterns**
 
-**Facade Method Design Pattern** is a part of the **Gang of Four design patterns** and it is categorized under **Structural design patterns**. 
+# Intent
+**Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.**
+---
+## _In Other Words_
 _**Facade**_ **hides the complexity** of the **underlying system** and **provides a simple interface** that **clients can use to interact with the system**.
+---
+# Motivation 
+**Structuring a system into subsystems** helps **reduce complexity**. A **common design goal** is to **minimize the communication** and **dependencies** between **subsystems**. One way to achieve this goal is to **introduce a facade object** that **provides a single, simplified interface to the more general facilities of a subsystem**.
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/FacadeDesignPatter-Example5.JPG)
 
 ## Example 1
 Imagine a Building, the **facade is the outer wall** that people see, but **behind** it is **a complex network of wires, pipes**, and **other systems** that make the building function. 
