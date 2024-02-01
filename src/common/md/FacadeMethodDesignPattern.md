@@ -6,7 +6,9 @@
 ---
 ## _In Other Words_
 _**Facade**_ **hides the complexity** of the **underlying system** and **provides a simple interface** that **clients can use to interact with the system**.
+
 ---
+
 # Motivation 
 **Structuring a system into subsystems** helps **reduce complexity**. A **common design goal** is to **minimize the communication** and **dependencies** between **subsystems**. One way to achieve this goal is to **introduce a facade object** that **provides a single, simplified interface to the more general facilities of a subsystem**.
 ![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/FacadeDesignPatter-Example5.JPG)
