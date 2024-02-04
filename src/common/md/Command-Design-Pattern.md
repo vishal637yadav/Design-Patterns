@@ -23,6 +23,20 @@ The command pattern helps us do that.
     **The command pattern encapsulates a request as an object, thereby letting us parameterize other objects with 
     different requests, queue or log requests, and support undoable operations.**
 
+---
+# Object Behavioral: Command or Action or Transaction
+## Intent 
+**Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.** 
+## Also Known As 
+Action, Transaction 
+##  Motivation 
+Sometimes it’s necessary to issue requests to objects without 
+knowing anything about the operation being requested or the receiver of the request. 
+For example, user interface toolkits include objects like buttons and menus that carry out a request in response to user input. But the toolkit can’t implement the request explicitly in the button or menu, because only applications that use the toolkit know what should be done on which object. As toolkit designers we have no way of knowing the receiver of the request or the operations that will carry it out.
+
+
+Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. Design Patterns (Addison-Wesley Professional Computing Series) (pp. 318-319). Pearson Education. Kindle Edition.
+
 
 The definition is a bit confusing at first but let’s step through it. In analogy to our problem 
 above remote control is the client and stereo, lights, etc. are the receivers. 
