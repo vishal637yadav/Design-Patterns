@@ -20,9 +20,7 @@ public class AndExpression implements Expression {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("AndExpression [left=").append(left).append(", right=").append(right).append("]");
-        return builder.toString();
+        return "AndExpression [left=" + left + ", right=" + right + "]";
     }
 
 }
