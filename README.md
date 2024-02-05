@@ -9,21 +9,18 @@ DesignPatterns - Low Level Design
 
 |<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
 |---|---|---|
-|<b>[1.Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
-|<b>[2.Command-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
-|<b>[3.Command-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
-|<b>[Factory Method(Class)]()</b>|<b>[Adapter(Class)]()</b>|<b>[Interpreter(Class)]()</b>|
-|<b>[Abstract Factory]()</b>|<b>[Adapter(Object)]()</b>|[Template Method(Class)]()</b>|
-|<b>[Builder]()</b>|<b>[Bridge]()</b>|[Chain of Responsibility]()</b>|
-|<b>[Prototype]()</b>|<b>[Composite]()</b>|[<b>Command</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)|
-|<b>[Singleton]()</b>|<b>[Decorator]()</b>|[Iterator]()</b>|
-|<b>[--]()</b>|<b>[Facade]()</b>|[Mediator]()</b>|
-|<b>[--]()</b>|<b>[Flyweight]()</b>|[Memento]()</b>|
-||<b>[Proxy]()</b>|[Observer]()</b>|
-||<b>[--]()</b>|[State]()</b>|
-||<b>[--]()</b>|[Strategy]()</b>|
-||<b>[**Structural**]()</b>|[Visitor]()</b>|
-||<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
+|[Factory Method(Class)]()</b>|[Adapter(Class)]()</b>|[Interpreter(Class)]()</b>|
+|[Abstract Factory]()</b>|[Adapter(Object)]()</b>|[Template Method(Class)]()</b>|
+|[Builder]()</b>|[Bridge]()</b>|[Chain of Responsibility]()</b>|
+|[Prototype]()</b>|[Composite]()</b>|[<b>Command</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)|
+|[Singleton]()</b>|[Decorator]()</b>|<b>[Iterator](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
+||<b>[Facade](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|[Mediator]()</b>|
+||[Flyweight]()|[Memento]()</b>|
+||[Proxy]()</b>|[Observer]()</b>|
+|||[State]()</b>|
+|||[Strategy]()</b>|
+|||[Visitor]()</b>|
+|||[**Behavourial**]()</b>|
 
 ---
 
