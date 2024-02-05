@@ -12,8 +12,8 @@ DesignPatterns - Low Level Design
 |Factory Method(Class)|Adapter(Class)|Interpreter(Class)|
 |||Template Method(Class)|
 |Abstract Factory|Adapter(Object)|Chain of Responsibility|
-|Builder|Bridge|<b>[Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)<b>|
-|Prototype|Composite|[<b>Iterator</b>(https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)|
+|Builder|Bridge|<b>[Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|
+|Prototype|Composite|[<b>Iterator</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)|
 |Singleton|Decorator|Mediator|
 ||Facade|Memento|
 ||Flyweight|Observer|
