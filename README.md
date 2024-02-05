@@ -19,11 +19,11 @@ DesignPatterns - Low Level Design
 |<b>[Singleton]()</b>|<b>[Decorator]()</b>|[Iterator]()</b>|
 |<b>[--]()</b>|<b>[Facade]()</b>|[Mediator]()</b>|
 |<b>[--]()</b>|<b>[Flyweight]()</b>|[Memento]()</b>|
-|<b>[**Creational**]()</b>|<b>[Proxy]()</b>|[Observer]()</b>|
-|<b>[**Creational**]()</b>|<b>[--]()</b>|[State]()</b>|
-|<b>[**Creational**]()</b>|<b>[--]()</b>|[Strategy]()</b>|
-|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[Visitor]()</b>|
-|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
+||<b>[Proxy]()</b>|[Observer]()</b>|
+||<b>[--]()</b>|[State]()</b>|
+||<b>[--]()</b>|[Strategy]()</b>|
+||<b>[**Structural**]()</b>|[Visitor]()</b>|
+||<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
 
 ---
 
