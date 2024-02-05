@@ -12,6 +12,18 @@ DesignPatterns - Low Level Design
 |<b>[1.Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
 |<b>[2.Command-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
 |<b>[3.Command-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|<b>[1.FacadeMethod](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FacadeMethodDesignPattern.md)</b>|<b>[1.Iterator-Behavioral-Design-Pattern.md](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)</b>|
+|<b>[Factory Method(Class)]()</b>|<b>[Adapter(Class)]()</b>|[Interpreter(Class)]()</b>|
+|<b>[Abstract Factory]()</b>|<b>[Adapter(Object)]()</b>|[Template Method(Class)]()</b>|
+|<b>[Builder]()</b>|<b>[Bridge]()</b>|[Chain of Responsibility]()</b>|
+|<b>[Prototype]()</b>|<b>[Composite]()</b>|[Command]()</b>|
+|<b>[Singleton]()</b>|<b>[Decorator]()</b>|[Iterator]()</b>|
+|<b>[--]()</b>|<b>[Facade]()</b>|[Mediator]()</b>|
+|<b>[--]()</b>|<b>[Flyweight]()</b>|[Memento]()</b>|
+|<b>[**Creational**]()</b>|<b>[Proxy]()</b>|[Observer]()</b>|
+|<b>[**Creational**]()</b>|<b>[--]()</b>|[State]()</b>|
+|<b>[**Creational**]()</b>|<b>[--]()</b>|[Strategy]()</b>|
+|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[Visitor]()</b>|
+|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
 
 ---
 
