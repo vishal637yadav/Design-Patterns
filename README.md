@@ -17,7 +17,7 @@ DesignPatterns - Low Level Design
 |Singleton|Decorator|Mediator|
 ||Facade|Memento|
 ||Flyweight|Observer|
-||Proxy|State|
+||[Proxy](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Proxy-Theory.md)|State|
 |||Strategy|
 |||Visitor|
 
