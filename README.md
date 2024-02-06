@@ -16,7 +16,7 @@ DesignPatterns - Low Level Design
 |Prototype|Composite|[<b>Iterator</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)|
 |Singleton|Decorator|Mediator|
 ||Facade|Memento|
-||[<b>Flyweight</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FlyweightDesignPattern.md)|Observer|
+||[<b>Flyweight</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FlyweightDesignPattern.md)|[<b>Observer</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Observer-Design-Pattern.md)|
 ||[Proxy](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Proxy-Theory.md)|State|
 |||Strategy|
 |||Visitor|
