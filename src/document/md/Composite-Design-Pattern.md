@@ -122,7 +122,7 @@ In this client code, you can see how the client interacts with both leaf (file) 
 
 ## Diagrammatic representation of the Composite Design Pattern
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/common/images/Composite-ClassStructure.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Composite-ClassStructure.JPG)
 
 ---
 
