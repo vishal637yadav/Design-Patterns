@@ -174,13 +174,12 @@ If ConcreteHandler1 can handle it, then the request is handled, if not it is sen
             chain.process(new Number(91));  
         }  
     }
-
-
+---
 ### Output:
-**PositiveProcessor : 90</br>
-NegativeProcessor : -50</br>
-ZeroProcessor : 0</br>
-PositiveProcessor : 91</br>**
+    PositiveProcessor : 90
+    NegativeProcessor : -50
+    ZeroProcessor : 0
+    PositiveProcessor : 91
 ---
 
 ## Advantages of Chain of Responsibility Design Pattern
