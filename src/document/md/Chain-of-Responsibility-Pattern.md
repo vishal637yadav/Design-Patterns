@@ -1,3 +1,5 @@
+[Desing Pattern List](https://github.com/vishal637yadav/DesignPatterns/tree/master/README.md)
+
 # Chain of Responsibility Design Pattern
 
 **Chain of responsibility pattern** is used **to achieve loose coupling in software design** 
@@ -18,6 +20,9 @@ be a specific object**. Also, the handler is determined at **runtime**.
 
 > [!NOTE]
 > A request **not handled** at all by **any handler** is a **valid use case**.
+
+
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/ChainOfResponsibility.JPG)
 
 ## Key Components in Chain of Responsibilities Pattern.
 1. **Handler :** This can be an interface which will **primarily receive the request** and **dispatches the request to a chain of handlers**. 
@@ -170,13 +175,13 @@ If ConcreteHandler1 can handle it, then the request is handled, if not it is sen
         }  
     }
 
----
-### Output:
-**PositiveProcessor : 90
-NegativeProcessor : -50
-ZeroProcessor : 0
-PositiveProcessor : 91**
 
+### Output:
+**PositiveProcessor : 90</br>
+NegativeProcessor : -50</br>
+ZeroProcessor : 0</br>
+PositiveProcessor : 91</br>**
+---
 
 ## Advantages of Chain of Responsibility Design Pattern
 
