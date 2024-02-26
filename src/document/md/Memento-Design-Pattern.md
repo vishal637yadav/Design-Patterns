@@ -33,8 +33,8 @@ its **implementation details**.
    Typically represented as the part of the application or system that interacts with the Originator and Caretaker to achieve specific functionality. The client initiates requests to save or restore the state of the Originator through the Caretaker.
 
 Communication between the components
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Momento-Design-Pattern.JPG)
 
-![img](./../document/images/Momento-Design-Pattern.JPG)
 
 1. **Client:** The client initiates the process by requesting the Originator to perform some operation that may modify its state or require the state to be saved. For example, the client might trigger an action like “save state” or “restore state.”
 2. **Originator:** Upon receiving a request from the client, the Originator either creates a Memento to save its current state (if the request is to save state) or retrieves a Memento to restore its previous state (if the request is to restore state).
@@ -86,7 +86,7 @@ Encapsulation: The Memento pattern allows you to encapsulate the state of the do
 Undo Functionality: By storing snapshots of the document’s state at different points in time, the Memento pattern enables the implementation of an undo feature, allowing users to revert changes and restore previous document states.
 Separation of Concerns: The Memento pattern separates the responsibility of state management from the document itself, promoting cleaner and more maintainable code.
 
-![img](./../document/images/Momento-Design-Pattern2.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Momento-Design-Pattern2.JPG)
 
 Below is the code of above problem statement using Interpreter Pattern:
 
