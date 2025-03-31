@@ -7,19 +7,19 @@ DesignPatterns - Low Level Design
 ---
 # Design Patterns
 
-|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>|[**Behavourial**]()</b>|
-|---|---|---|
-|Factory Method(Class)|Adapter(Class)|Interpreter(Class)|
-|||[Template Method(Class)](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Template-Design-Pattern.md)|
-|Abstract Factory|Adapter(Object)|[<b>Chain of Responsibility</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Chain-of-Responsibility-Pattern.md)|
-|Builder|Bridge|<b>[Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>|
-|Prototype|[<b>Composite</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Composite-Design-Pattern.md)|[<b>Iterator</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)|
-|Singleton|Decorator|[**Mediator**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Mediator-design-pattern.md)|
-|[**Object Pool**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Object-Pool-DesignPattern.md)|Facade|[**Memento**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Memento-Design-Pattern.md)|
-||[<b>Flyweight</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FlyweightDesignPattern.md)|[<b>Observer</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Observer-Design-Pattern.md)|
-||[Proxy](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Proxy-Theory.md)|State|
-|||Strategy|
-|||Visitor|
+|<b>[**Creational**]()</b>|<b>[**Structural**]()</b>| [**Behavourial**]()</b>                                                                                                                           |
+|---|---|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|Factory Method(Class)|Adapter(Class)| Interpreter(Class)                                                                                                                                |
+||| [Template Method(Class)](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Template-Design-Pattern.md)                 |
+|Abstract Factory|Adapter(Object)| [<b>Chain of Responsibility</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Chain-of-Responsibility-Pattern.md) |
+|Builder|Bridge| <b>[Command](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Command-Design-Pattern.md)</b>                          |
+|Prototype|[<b>Composite</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Composite-Design-Pattern.md)| [<b>Iterator</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Iterator-Behavioral-Design-Pattern.md)             |
+|Singleton|Decorator| [**Mediator**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Mediator-design-pattern.md)                           |
+|[**Object Pool**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Object-Pool-DesignPattern.md)|Facade| [**Memento**](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Memento-Design-Pattern.md)                             |
+||[<b>Flyweight</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/FlyweightDesignPattern.md)| [<b>Observer</b>](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Observer-Design-Pattern.md)                        |
+||[Proxy](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/md/Proxy-Theory.md)| State                                                                                                                                             |
+||| [Strategy](./src/document/md/Strategy-Design-Pattern.md)                                                                                          |
+||| Visitor                                                                                                                                           |
 
 ---
 
