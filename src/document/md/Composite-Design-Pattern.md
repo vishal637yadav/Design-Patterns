@@ -103,7 +103,7 @@ In this example, Directory is a composite object. Like the File class, it also i
     
     int main() {
     // Create leaf objects (files)
-    FileSystemComponent* file1 = new File("document.txt", 1024);
+    FileSystemComponent* file1 = new File("documentContext.txt", 1024);
     FileSystemComponent* file2 = new File("image.jpg", 2048);
     
         // Create a composite object (directory) 
@@ -122,7 +122,7 @@ In this client code, you can see how the client interacts with both leaf (file) 
 
 ## Diagrammatic representation of the Composite Design Pattern
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Composite-ClassStructure.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/Composite-ClassStructure.JPG)
 
 ---
 
@@ -182,7 +182,7 @@ Code Implementation of the above Problem:
     {
     // Create leaf objects (files)
     FileSystemComponent* file1
-    = new File("document.txt", 1024);
+    = new File("documentContext.txt", 1024);
     FileSystemComponent* file2
     = new File("image.jpg", 2048);
 
@@ -201,7 +201,7 @@ Code Implementation of the above Problem:
 
 ## **Output**
 Directory: My Documents
-File: document.txt (1024 bytes)
+File: documentContext.txt (1024 bytes)
 File: image.jpg (2048 bytes)
 
 

@@ -19,7 +19,7 @@ However, we don't want a process to have to wait for a particular object to be r
 Structure
 The general idea for the Connection Pool pattern is that if instances of a class can be reused, you avoid creating instances of the class by reusing them.
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Object-Pool-DP1.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/Object-Pool-DP1.JPG)
 
 Reusable - Instances of classes in this role collaborate with other objects for a limited amount of time, then they are no longer needed for that collaboration.
 Client - Instances of classes in this role use Reusable objects.
@@ -38,7 +38,7 @@ Example
 Object pool pattern is similar to an office warehouse. When a new employee is hired, office manager has to prepare a work space for him. She figures whether or not there's a spare equipment in the office warehouse. If so, she uses it. If not, she places an order to purchase new equipment from Amazon. In case if an employee is fired, his equipment is moved to warehouse, where it could be taken when 
 new work place will be needed.
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Object-Pool-DP2.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/Object-Pool-DP2.JPG)
 
 
 Check list

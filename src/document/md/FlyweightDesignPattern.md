@@ -6,10 +6,10 @@
 Some applications could benefit from using objects throughout their design, 
 but a naive implementation would be prohibitively expensive. 
 
-For example, most document editor implementations have text formatting and editing facilities 
+For example, most documentContext editor implementations have text formatting and editing facilities 
 that are modularized to some extent. 
-Object-oriented document editors typically use objects to represent embedded elements like tables and figures. 
-However, they usually stop short of using an object for each character in the document, 
+Object-oriented documentContext editors typically use objects to represent embedded elements like tables and figures. 
+However, they usually stop short of using an object for each character in the documentContext, 
 even though doing so would promote flexibility at the finest levels in the application. 
 Characters and embedded elements
 
@@ -26,11 +26,11 @@ it consists of information that’s independent of the flyweight’s context, th
 **Client objects** are responsible for **passing extrinsic state to the flyweight when it needs it**. 
 Flyweights model concepts or entities that are normally too plentiful to represent with objects. 
 
-For example, a document editor can create a flyweight for each letter of the alphabet. 
-Each flyweight stores a character code, but its coordinate position in the document and its typographic style 
+For example, a documentContext editor can create a flyweight for each letter of the alphabet. 
+Each flyweight stores a character code, but its coordinate position in the documentContext and its typographic style 
 can be determined from the text layout algorithms and formatting commands in effect wherever the character appears.
 The character code is intrinsic state, while the other information is extrinsic. 
-Logically there is an object for every occurrence of a given character in the document:
+Logically there is an object for every occurrence of a given character in the documentContext:
 
 
 **Flyweight pattern** is a **structural design patterns** 
@@ -55,7 +55,7 @@ To understand Intrinsic and Extrinsic state, let us consider an example.
 
 Suppose in a text editor when we enter a character, an object of Character class is created, the attributes of the Character class are {name, font, size}. We do not need to create an object every time client enters a character since letter ‘B’ is no different from another ‘B’ . If client again types a ‘B’ we simply return the object which we have already created before. Now all these are intrinsic states (name, font, size), since they can be shared among the different objects as they are similar to each other.
 
-Now we add to more attributes to the Character class, they are row and column. They specify the position of a character in the document. Now these attributes will not be similar even for same characters, since no two characters will have the same position in a document, these states are termed as extrinsic states, and they can’t be shared among objects.
+Now we add to more attributes to the Character class, they are row and column. They specify the position of a character in the documentContext. Now these attributes will not be similar even for same characters, since no two characters will have the same position in a documentContext, these states are termed as extrinsic states, and they can’t be shared among objects.
 
 Implementation : We implement the creation of Terrorists and Counter Terrorists In the game of Counter Strike. So we have 2 classes one for Terrorist(T) and other for Counter Terrorist(CT). Whenever a player asks for a weapon we assign him the asked weapon. In the mission, terrorist’s task is to plant a bomb while the counter terrorists have to diffuse the bomb.
 

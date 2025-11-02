@@ -33,7 +33,7 @@ its **implementation details**.
    Typically represented as the part of the application or system that interacts with the Originator and Caretaker to achieve specific functionality. The client initiates requests to save or restore the state of the Originator through the Caretaker.
 
 Communication between the components
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Momento-Design-Pattern.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/Momento-Design-Pattern.JPG)
 
 
 1. **Client:** The client initiates the process by requesting the Originator to perform some operation that may modify its state or require the state to be saved. For example, the client might trigger an action like “save state” or “restore state.”
@@ -76,17 +76,17 @@ When you want to revisit an earlier version of your painting, you ask the art co
 So, in this analogy, you, the artist, create and manage your painting (Originator), take photographs to capture its progress (Memento), and rely on an art collector (Caretaker) to organize and store those photographs for future reference or restoration. This illustrates how the components of the Memento pattern work together in a real-life scenario.
 
 Memento Design Pattern Example
-Imagine you’re building a text editor application, and you want to implement an undo feature that allows users to revert changes made to a document. The challenge is to store the state of the document at various points in time and restore it when needed without exposing the internal implementation of the document.
+Imagine you’re building a text editor application, and you want to implement an undo feature that allows users to revert changes made to a documentContext. The challenge is to store the state of the documentContext at various points in time and restore it when needed without exposing the internal implementation of the documentContext.
 
 Benefit of Using Memento Pattern in this scenario:
 
 Using the Memento pattern in this scenario provides several benefits:
 
-Encapsulation: The Memento pattern allows you to encapsulate the state of the document within Memento objects, preventing direct access and manipulation of the document’s state.
-Undo Functionality: By storing snapshots of the document’s state at different points in time, the Memento pattern enables the implementation of an undo feature, allowing users to revert changes and restore previous document states.
-Separation of Concerns: The Memento pattern separates the responsibility of state management from the document itself, promoting cleaner and more maintainable code.
+Encapsulation: The Memento pattern allows you to encapsulate the state of the documentContext within Memento objects, preventing direct access and manipulation of the documentContext’s state.
+Undo Functionality: By storing snapshots of the documentContext’s state at different points in time, the Memento pattern enables the implementation of an undo feature, allowing users to revert changes and restore previous documentContext states.
+Separation of Concerns: The Memento pattern separates the responsibility of state management from the documentContext itself, promoting cleaner and more maintainable code.
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/Momento-Design-Pattern2.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/Momento-Design-Pattern2.JPG)
 
 Below is the code of above problem statement using Interpreter Pattern:
 
@@ -172,22 +172,22 @@ Let’s break down into the component wise code:
     public class Main {
     
         public static void main(String[] args) {
-            Document document = new Document("Initial content\n");
+            Document documentContext = new Document("Initial content\n");
             History history = new History();
     
             // Write some content
-            document.write("Additional content\n");
-            history.addMemento(document.createMemento());
+            documentContext.write("Additional content\n");
+            history.addMemento(documentContext.createMemento());
     
             // Write more content
-            document.write("More content\n");
-            history.addMemento(document.createMemento());
+            documentContext.write("More content\n");
+            history.addMemento(documentContext.createMemento());
     
             // Restore to previous state
-            document.restoreFromMemento(history.getMemento(1));
+            documentContext.restoreFromMemento(history.getMemento(1));
     
-            // Print document content
-            System.out.println(document.getContent());
+            // Print documentContext content
+            System.out.println(documentContext.getContent());
         }
     
     }

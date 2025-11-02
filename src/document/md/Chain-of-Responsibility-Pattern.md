@@ -22,7 +22,7 @@ be a specific object**. Also, the handler is determined at **runtime**.
 > A request **not handled** at all by **any handler** is a **valid use case**.
 
 
-![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/document/images/ChainOfResponsibility.JPG)
+![img](https://github.com/vishal637yadav/DesignPatterns/blob/master/src/documentContext/images/ChainOfResponsibility.JPG)
 
 ## Key Components in Chain of Responsibilities Pattern.
 1. **Handler :** This can be an interface which will **primarily receive the request** and **dispatches the request to a chain of handlers**. 
