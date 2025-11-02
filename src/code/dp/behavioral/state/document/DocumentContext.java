@@ -4,17 +4,19 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Document {
+public class DocumentContext {
 
-    private String id;
+    private IDocumentState currentState;
+
+    //Document attributes
+    private final String id;
     private String title;
     private String content;
     private int version;
-    private DocumentState currentState;
-    private List<String> stateHistory;
+    private final List<String> stateHistory;
     private LocalDateTime lastModified;
 
-    public Document(String id, String title, String content) {
+    public DocumentContext(String id, String title, String content) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -28,47 +30,75 @@ public class Document {
 
     // State operations
     public void edit() {
-        currentState.edit(this);
+        currentState.switchToDraftState(this);
         updateLastModified();
     }
 
     public void review() {
-        currentState.review(this);
+        currentState.switchToReviewState(this);
         updateLastModified();
     }
 
     public void publish() {
-        currentState.publish(this);
+        currentState.switchToPublishState(this);
         updateLastModified();
     }
 
     public void archive() {
-        currentState.archive(this);
+        currentState.switchToArchiveState(this);
         updateLastModified();
     }
 
     // State management
     public void setState(DocumentState state) {
         this.currentState = state;
-        stateHistory.add(state.getStateName() + " - " + LocalDateTime.now());
+        stateHistory.add(state.getDocumentState() + " - " + LocalDateTime.now());
     }
 
     // Getters and setters
-    public String getId() { return id; }
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public String getId() {
+        return id;
+    }
 
-    public String getContent() { return content; }
-    public void setContent(String content) { this.content = content; }
+    public String getTitle() {
+        return title;
+    }
 
-    public int getVersion() { return version; }
-    public void incrementVersion() { this.version++; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    public DocumentState getCurrentState() { return currentState; }
-    public String getCurrentStateName() { return currentState.getStateName(); }
+    public String getContent() {
+        return content;
+    }
 
-    public List<String> getStateHistory() { return new ArrayList<>(stateHistory); }
-    public LocalDateTime getLastModified() { return lastModified; }
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public void incrementVersion() {
+        this.version++;
+    }
+
+    public String getCurrentState() {
+        return currentState.getDocumentState();
+    }
+
+    public String getCurrentStateName() {
+        return currentState.getDocumentState();
+    }
+
+    public List<String> getStateHistory() {
+        return new ArrayList<>(stateHistory);
+    }
+
+    public LocalDateTime getLastModified() {
+        return lastModified;
+    }
 
     private void updateLastModified() {
         this.lastModified = LocalDateTime.now();
@@ -76,6 +106,7 @@ public class Document {
 
     // Display methods
     public void displayInfo() {
+        System.out.println("------------------------------------------------------");
         System.out.println("\n📄 DOCUMENT INFORMATION");
         System.out.println("ID: " + id);
         System.out.println("Title: " + title);
@@ -83,6 +114,7 @@ public class Document {
         System.out.println("Current State: " + getCurrentStateName());
         System.out.println("Content: " + content);
         System.out.println("Last Modified: " + lastModified);
+        System.out.println("------------------------------------------------------");
     }
 
     public void displayStateHistory() {

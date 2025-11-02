@@ -1,35 +1,36 @@
 package code.dp.behavioral.state.document;
 
-public class DraftState extends DocumentState{
+public class DraftState extends DocumentState {
 
     public DraftState() {
         super("DRAFT");
     }
 
     @Override
-    public void edit(Document document) {
-        System.out.println("✏️  Editing document in DRAFT state");
-        document.setContent(document.getContent() + " [Edited]");
-        System.out.println("Content updated: " + document.getContent());
+    public void switchToDraftState(DocumentContext documentContext) {
+        System.out.println("✏️  Editing documentContext in DRAFT state");
+        documentContext.setContent(documentContext.getContent() + " [Edited]");
+        System.out.println("Content updated: " + documentContext.getContent());
     }
 
     @Override
-    public void review(Document document) {
-        System.out.println("📋 Sending document for REVIEW");
+    public void switchToReviewState(DocumentContext documentContext) {
+        System.out.println("📋 Sending documentContext for REVIEW");
         logStateChange("DRAFT", "REVIEW");
-        document.setState(new ReviewState());
+        documentContext.setState(new ReviewState());
     }
 
     @Override
-    public void publish(Document document) {
+    public void switchToPublishState(DocumentContext documentContext) {
         System.out.println("❌ Cannot publish directly from DRAFT. Must review first.");
+        throw new IllegalStateException("Cannot publish directly from DRAFT");
     }
 
     @Override
-    public void archive(Document document) {
-        System.out.println("🗄️  Archiving DRAFT document");
+    public void switchToArchiveState(DocumentContext documentContext) {
+        System.out.println("🗄️  Archiving DRAFT documentContext");
         logStateChange("DRAFT", "ARCHIVED");
-        document.setState(new ArchivedState());
+        documentContext.setState(new ArchivedState());
     }
 
 }

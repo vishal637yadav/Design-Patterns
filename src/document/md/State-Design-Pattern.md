@@ -17,6 +17,10 @@ Allow an object to alter its behavior when its internal state changes. The objec
 * Implement behavior for a particular state.
 * Optionally decide state transitions by setting a new state in the Context.
 
+## 3) UML Diagram
+[!img State Pattern UML](../images/State-Design-Pattern.png)
+
+
 ## Example : Traffic-Light
 ### State interface
       interface LightState {
@@ -110,6 +114,12 @@ Each state defines what each event means.
 ## When Not To Use
 1. If states are few and logic is trivial, simple conditionals may be clearer.
 2. If transitions are purely data-driven with no state-specific behavior, consider a finite-state machine table or a strategy.
+
+# Additional Real-World Use Cases
+* Document Workflow: Draft → Moderation → Published
+* Order Processing: New → Paid → Shipped → Delivered
+* TCP Connection: Established → Listening → Closed
+* Media Player: Playing → Paused → Stopped
 
 ## Common Example of State Design Pattern :
 1. Order/Workflow Lifecycles (e-commerce, ERP)

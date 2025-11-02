@@ -1,33 +1,35 @@
 package code.dp.behavioral.state.document;
 
-public class ReviewState extends DocumentState{
+public class ReviewState extends DocumentState {
     public ReviewState() {
         super("REVIEW");
     }
 
     @Override
-    public void edit(Document document) {
-        System.out.println("📝 Document sent back to DRAFT for editing");
+    public void switchToDraftState(DocumentContext documentContext) {
+        System.out.println("📝 DocumentContext sent back to DRAFT for editing");
         logStateChange("REVIEW", "DRAFT");
-        document.setState(new DraftState());
+        documentContext.setState(new DraftState());
     }
 
     @Override
-    public void review(Document document) {
-        System.out.println("🔍 Document is already under REVIEW");
+    public void switchToReviewState(DocumentContext documentContext) {
+        System.out.println("🔍 DocumentContext is already under REVIEW");
+        throw new IllegalStateException("DocumentContext is already in REVIEW state");
     }
 
     @Override
-    public void publish(Document document) {
-        System.out.println("✅ Review approved - Publishing document");
+    public void switchToPublishState(DocumentContext documentContext) {
+        System.out.println("✅ Review approved - Publishing documentContext");
         logStateChange("REVIEW", "PUBLISHED");
-        document.setState(new PublishedState());
+        documentContext.setState(new PublishedState());
     }
 
     @Override
-    public void archive(Document document) {
-        System.out.println("🗄️  Archiving document from REVIEW");
+    public void switchToArchiveState(DocumentContext documentContext) {
+        System.out.println("🗄️  Archiving documentContext from REVIEW");
         logStateChange("REVIEW", "ARCHIVED");
-        document.setState(new ArchivedState());
+        documentContext.setState(new ArchivedState());
     }
+
 }

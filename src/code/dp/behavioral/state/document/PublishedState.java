@@ -1,32 +1,34 @@
 package code.dp.behavioral.state.document;
 
-public class PublishedState extends DocumentState{
+public class PublishedState extends DocumentState {
     public PublishedState() {
         super("PUBLISHED");
     }
 
     @Override
-    public void edit(Document document) {
+    public void switchToDraftState(DocumentContext documentContext) {
         System.out.println("📝 Creating new version - Moving to DRAFT");
-        document.incrementVersion();
+        documentContext.incrementVersion();
         logStateChange("PUBLISHED", "DRAFT");
-        document.setState(new DraftState());
+        documentContext.setState(new DraftState());
     }
 
     @Override
-    public void review(Document document) {
-        System.out.println("❌ Published document cannot be reviewed again");
+    public void switchToReviewState(DocumentContext documentContext) {
+        System.out.println("❌ Published documentContext cannot be reviewed again");
+        throw new IllegalStateException("Published DocumentContext Cannot be Reviewed!!");
     }
 
     @Override
-    public void publish(Document document) {
-        System.out.println("ℹ️  Document is already PUBLISHED");
+    public void switchToPublishState(DocumentContext documentContext) {
+        System.out.println("ℹ️  DocumentContext is already PUBLISHED");
     }
 
     @Override
-    public void archive(Document document) {
-        System.out.println("🗄️  Archiving PUBLISHED document");
+    public void switchToArchiveState(DocumentContext documentContext) {
+        System.out.println("🗄️  Archiving PUBLISHED documentContext");
         logStateChange("PUBLISHED", "ARCHIVED");
-        document.setState(new ArchivedState());
+        documentContext.setState(new ArchivedState());
     }
+
 }

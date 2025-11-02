@@ -1,22 +1,17 @@
 package code.dp.behavioral.state.document;
 
-public abstract class DocumentState {
-    protected String stateName;
+public abstract class DocumentState implements IDocumentState {
+    protected final String stateName;
 
-    public DocumentState(String stateName) {
+    protected DocumentState(String stateName) {
         this.stateName = stateName;
     }
 
-    public abstract void edit(Document document);
-    public abstract void review(Document document);
-    public abstract void publish(Document document);
-    public abstract void archive(Document document);
-
-    public String getStateName() {
+    public final String getDocumentState() {
         return stateName;
     }
 
     protected void logStateChange(String from, String to) {
-        System.out.println("Document state changed: " + from + " → " + to);
+        System.out.println("DocumentContext State Changed: " + from + " --→> " + to);
     }
 }
