@@ -1,22 +1,28 @@
 package com.sourcecode.spring.dp.state.order.state;
 
 import com.sourcecode.spring.dp.state.order.OrderContext;
+
+import java.util.List;
+
 /*
-------------------------------------------------------------------------------------------------------------------------
---- Order State Interface ---
-Defines the actions that can be performed on an order in different states.
-------------------------------------------------------------------------------------------------------------------------
-    1. item selection -> itemSelection
-    2. processing payment -> paymentProcessing
-    3. shiping item -> shipping
-    4. deliver item -> deliver
-    5. cancel order -> cancel
-------------------------------------------------------------------------------------------------------------------------
+    Order Processing System State Interface
+    Defines the methods for state transitions in the order processing lifecycle.
  */
 public interface OrderState {
-    void processPayment(OrderContext order);
-    void ship(OrderContext order);
-    void deliver(OrderContext order);
-    void cancel(OrderContext order);
+
+    // Order Placed :  CREATED State
+    OrderContext orderCreation(List<ItemEnum> items);
+
+    // State Transition : From CREATED ---to--> PENDING_PAYMENT State
+    void billGeneration(OrderContext order);
+
+    // Order State : Changes from PENDING_PAYMENT ---to--> SHIPPED State
+    void paymentProcessing(OrderContext order);
+
+    // Order State : Changes from SHIPPED ---to--> DELIVERED State
+    void orderDelivery(OrderContext order);
+
+    // Method to get the current state of the order
+    OrderStateEnum getState();
 
 }

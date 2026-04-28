@@ -1,38 +1,57 @@
 package com.sourcecode.spring.dp.state.order;
 
-import com.sourcecode.spring.dp.state.order.state.NewOrderState;
+import com.sourcecode.spring.dp.state.order.state.ItemEnum;
 import com.sourcecode.spring.dp.state.order.state.OrderState;
+import jakarta.annotation.PostConstruct;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+import java.util.List;
+import java.util.UUID;
+
+@Slf4j
 @Data
+@Component
+@Scope("prototype")
 public class OrderContext {
-    private Long id;
-    private OrderState currentState;
+    //Order Attributes
+    private String orderId;
+    private List<ItemEnum> items;
+    private double billedAmount;
 
-    public OrderContext(Long id) {
-        this.id = id;
-        // A new order always starts in the 'New' state.
-        this.currentState = new NewOrderState();
+    private OrderState state;
+
+    public OrderContext(List<ItemEnum> items, OrderState state) {
+        this.items = items;
+        this.state = state;
+        this.orderId = UUID.randomUUID().toString();
     }
 
-    // --- Delegate actions to the current state object ---
-    public void processPayment() {
-        currentState.processPayment(this);
+    public void generateOrderBilledAmount() {
     }
 
-    public void ship() {
-        currentState.ship(this);
+    public void nextStateTransition(OrderState newOrderState) {
+        log.debug("-----OrderContext State Transition ::::  {} ===-->>> {} ", state.getState(), newOrderState.getState());
+        this.state = newOrderState;
     }
 
-    public void deliver() {
-        currentState.deliver(this);
+    //Delegate actions to the current state object ---
+
+    // State Transition : From CREATED ---to--> PENDING_PAYMENT State
+    void billGeneration(OrderContext order) {
+        state.billGeneration(this);
     }
 
-    public void cancel() {
-        currentState.cancel(this);
+    // Order State : Changes from PENDING_PAYMENT ---to--> SHIPPED State
+    void paymentProcessing(OrderContext order) {
+        state.paymentProcessing(this);
     }
 
-    public String getCurrentStateName() {
-        return currentState.getClass().getSimpleName();
+    // Order State : Changes from SHIPPED ---to--> DELIVERED State
+    void orderDelivery(OrderContext order) {
+        state.orderDelivery(this);
     }
+
 }
