@@ -5,7 +5,7 @@ import java.util.List;
 
 public class WeatherStation implements Subject {
 
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     private String weather;
 
     @Override
